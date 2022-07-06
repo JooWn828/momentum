@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#quotes span {
+    font-size: large;
+    padding: 5px 0px;
+    transition: all 0.5s linear;
+}
+
+#quotes span:first-child:hover {
+    transform: translateY(-20px);
+}

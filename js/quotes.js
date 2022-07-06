@@ -46,3 +46,9 @@ const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;
 author.innerText = todayQuote.author;
+
+function handleQuote() {
+    author.classList.remove("hidden");
+}
+
+quote.addEventListener("mouseover", handleQuote);

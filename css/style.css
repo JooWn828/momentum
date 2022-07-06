@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import "reset.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
 body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
@@ -8,97 +11,6 @@ body {
 
 .hidden {
     display: none;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#weather {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: fixed;
-    top: 5px;
-    right: 5px;
-    color: white;
-}
-
-main {
-    text-align: center;
-    margin-top: 100px;
-}
-
-#clock {
-    font-size: 120px;
-    font-weight: bolder;
-    color: white;
-}
-
-#login-form input:first-child,
-#todo-form input {
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    width: 250px;
-    text-align: center;
-    padding: 10px;
-}
-
-#login-form input:first-child:focus-within,
-#todo-form input:active {
-    border: none;
-}
-
-::placeholder {
-    color: white;
-    opacity: 1;
-}
-
-#greeting {
-    font-size: 40px;
-    color: white;
-    font-weight: bolder;
-    padding: 20px 0px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#quotes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    color: white;
-    font-size: small;
-    font-weight: bold;
-}
-
-#quotes span {
-    padding: 5px 0px;
-}
-
-#todo-list {
-    color: white;
-}
-
-#todo-list li button {
-    background-color: transparent;
-    border: 0;
-    outline: 0;
-    font-size: large;
 }
 
 img {

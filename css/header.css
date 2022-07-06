@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    color: white;
+}
+
+#weather span:last-child {
+    text-align: end;
+}

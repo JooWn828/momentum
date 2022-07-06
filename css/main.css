@@ -1,0 +1,55 @@
+main {
+    text-align: center;
+    margin-top: 20%;
+}
+
+#clock {
+    font-size: 120px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 100px black;
+}
+
+#login-form input:first-child,
+#todo-form input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+}
+
+#login-form input:first-child:focus-within,
+#todo-form input:active {
+    border: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#greeting {
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+    padding: 20px 0px;
+}
+
+#todo-list {
+    color: white;
+}
+
+#todo-list li {
+    padding: 8px 0px;
+}
+
+#todo-list li button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: large;
+}
