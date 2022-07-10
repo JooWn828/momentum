@@ -41,14 +41,20 @@ const quotes = [{
 ];
 const quote = document.querySelector("#quotes span:first-child");
 const author = document.querySelector("#quotes span:last-child");
+const quoteDiv = document.querySelector("#quotes");
 
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.quote;
 author.innerText = todayQuote.author;
 
-function handleQuote() {
+function handleQuoteOver() {
     author.classList.remove("hidden");
 }
 
-quote.addEventListener("mouseover", handleQuote);
+function handleQuoteOut() {
+    author.classList.add("hidden");
+}
+
+quoteDiv.addEventListener("mouseover", handleQuoteOver);
+quoteDiv.addEventListener("mouseout", handleQuoteOut);
